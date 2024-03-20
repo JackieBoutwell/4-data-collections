@@ -111,13 +111,74 @@ myMovies.forEach((movie, i) => {
 
 // forof  loop
 // for (let movie of myMovies  vies) {
-	if (movie === 'Shrek') break;
-	console.log(myMovie);
+	// if ( myMovie === 'Shrek') break;
+	// console.log(myMovie);
 
 //  most important useful ones are 
-.map()
-.reduce()
-.find() 
-.every()
+// .map()
+// .reduce()
+// .find() 
+// .every()
+
+// let myMovies = [ 'Spaceballs', 'The Sting', 'Alien' ];
+// let moreMovies = ['Interstellar', ...myMovies, 'Contact'];
+
+// let myMovies = [ 'Spaceballs', 'The Sting', 'Alien' ];
+// let moviesCopy = [...myMovies];
+
+// newMovies.length;
+
+// length is the key
+// the number it returns is the value
+
+// array literal
+const arr = [];
+
+// object literal
+const obj = {};
+
+const vehicle = {
+	color: "blue",
+	hp: 4000,
+	year: 1989
+}
+
+vehicle.hp;  // dot notation
+vehicle["hp"];
+
+// // uniquie keys
+
+// const borough = {
+// 	name: "Brooklyn",
+// 	name: "The Bronx"
+// }
+
+// // console.log(borough); // { name: "The Bronx" }
 
 
+// // Changing Object Properties and Values
+
+// // const vehicle = {
+// 	color: "blue",
+// 	hp: 4000,
+// 	year: 1989,
+// 	"active registration": true
+// }
+
+vehicle.color = "red"; // changing an existing property value
+vehicle.make = "Audi"; // adding a new key:value pair
+delete vehicle["active registration"]; // removing an existing property
+
+// console.log(vehicle); // {color: 'red', hp: 4000, year: 1989, make: 'Audi'}
+
+
+ const vehicle = {
+	color: "blue",
+	hp: 4000,
+	year: 1989,
+	make: "Audi"
+}
+
+for (const key in vehicle) {
+	console.log(vehicle[key]);
+}
